@@ -40,7 +40,7 @@ body {
   background-color: white;
 }
 .background {
-  background: url("blue.png")
+  background-color: lightskyblue;
 }
 
 input[type=text] {
