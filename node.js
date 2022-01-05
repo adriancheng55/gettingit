@@ -73,7 +73,6 @@ function submitStuff()
 			break;
 		}
 	}
-	
 
 	
 	if ((weeb.length <= 0)||(game.length <= 0)||(swag.length <= 0)||(interest.length <= 0))
@@ -104,6 +103,11 @@ function submitStuff()
 			)
 		*/
 		weightCalculation();
+		if (interest == "none")
+		{
+			alert("Even though your chance of getting is 0, we'll still give your stats");
+			percentage = 0;
+		}
 		localStorage.setItem("keyHot", hot);
 		localStorage.setItem("keyCharm", charm);
 		localStorage.setItem("keyCute", cute);
@@ -112,6 +116,7 @@ function submitStuff()
 		localStorage.setItem("keyReliable", reliable);
 		localStorage.setItem("keyPercent", percentage);
 		localStorage.setItem("keyName", name);
+		window.location.href = "pageLoad.html";
 
 		//alert ("Your chance of getting it is: " + percentage + "%");
 
@@ -303,12 +308,12 @@ function chartStuff()
 		    function drawChart() {
 		      var data = google.visualization.arrayToDataTable([
 		        ["Stat", "Percentage", { role: "style" } ],
-		        ["Hotness", getter("hot"), "red"],
-		        ["Cuteness", getter("cute"), "blue"],
-		        ["Charm", getter("charm"), "green"],
-		        ["Reliablility", getter("reliable"), "yellow"],
-		        ["Drippiness", getter("drip"), "red"],
-		        ["Kindness", getter("kind"), "blue"],
+		        ["Hotness", getter("hot"), "color: #462066"],
+		        ["Cuteness", getter("cute"), "color: #FFB85F"],
+		        ["Charm", getter("charm"), "color: #FF7A5A"],
+		        ["Reliablility", getter("reliable"), "color: #00AAA0"],
+		        ["Drippiness", getter("drip"), "color: #8ED2C9"],
+		        ["Kindness", getter("kind"), "color: #FCF4D9"],
 		      ]);
 
 		      var view = new google.visualization.DataView(data);
@@ -334,5 +339,6 @@ function chartStuff()
 function percentStuff()
 {
 
-	document.getElementById("percentage").innerHTML = "Hi " + localStorage.getItem("keyName") + "! " + "Your chance of getting it is " + localStorage.getItem("keyPercent") + "%";
+	document.getElementById("percentage").innerHTML = "Hi " + localStorage.getItem("keyName") + "! ";
+	document.getElementById("moreText").innerHTML =  "Your chance of getting it is " + localStorage.getItem("keyPercent") + "%";
 }

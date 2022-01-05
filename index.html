@@ -1,95 +1,85 @@
 <!DOCTYPE html>
 
 <html>
-    
-    <head>
-        
-        <center>
-            <text> Am I Getting It</text>
-        </center>
-    </head>
+    <div class = "background">
+            <head>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="style.css">
+                <center>
+                    <h1> Am I Getting It</h1>
+                </center>
+            </head>
 
-    <body>
-        <br>
-        </br>
-        <center>
-            <label> Enter Your Name</label>
-        </center>
+            <body>
+                <center>
+                    <h3> Enter Your Name</h3>
+                </center>
 
-        <br>
-            <center>  
-                    <input type="text" id = "name">
-            </center>
-        </br>
+                    <center>  
+                            <input type="text" id = "name">
+                    </center>
 
-        <center>
+                <center>
+                        <h3>
+                              Do you play games?
+                        </h3>
+                        <input type = "radio" id = "gameY" name = "game" value = "yes"/>
+                            Yes
+                        <br>
+                        <input type = "radio" id = "gameN" name = "game" value = "no"/>
+                            No
+
+                            <h3>
+                               Does running with your hands and arms backwards make you run faster?
+                            </h3>
+                        <input type = "radio" id = "weebY" name = "weeb" value = "yes"/>
+                            Yes
+                        </br> 
+                        <input type = "radio" id = "weebN" name = "weeb" value = "no"/>
+                            No
+                        </br> 
+
+                            <h3>
+                                Could you see yourself realistically working at a Starbucks?
+                            </h3>
+                        <input type = "radio" id = "swagY" name = "swag" value = "yes"/>
+                            Yes
+                        </br> 
+                        <input type = "radio" id = "swagN" name = "swag" value = "no"/>
+                            No
+                        </br> 
+
+                            <h3>
+                                Who are you interested in?
+                            </h3>
+                        <input type = "radio" id = "maleY" name = "interest" value = "male"/>
+                            Male
+                        </br> 
+                        <input type = "radio" id = "femaleY" name = "interest" value = "female"/>
+                            Female
+                        </br>
+                        <input type = "radio" id = "otherY" name = "interest" value = "other"/>
+                            Other
+                        </br> 
+                        <input type = "radio" id = "noneY" name = "interest" value = "none"/>
+                            No one
+                        </br>  
+
+
+                </center>
                 <br>
-                    <label>
-                        Do you play games?
-                    </label>
+                    <center>
+
+                            <input type="submit" value="Let's see" onclick = "submitStuff()" />
+
+                    </center>        
                 </br>
 
-                <input type = "radio" id = "gameY" name = "game" value = "yes"/>
-                    Yes
-                </br> 
-                <input type = "radio" id = "gameN" name = "game" value = "no"/>
-                    No
-                </br> 
-
-                <br>
-                    <label>
-                        Does running with your hands and arms backwards make you run faster?
-                    </label>
-                </br>
-                <input type = "radio" id = "weebY" name = "weeb" value = "yes"/>
-                    Yes
-                </br> 
-                <input type = "radio" id = "weebN" name = "weeb" value = "no"/>
-                    No
-                </br> 
-
-                <br>
-                    <label>
-                        Could you see yourself realistically working at a Starbucks?
-                    </label>
-                </br>
-                <input type = "radio" id = "swagY" name = "swag" value = "yes"/>
-                    Yes
-                </br> 
-                <input type = "radio" id = "swagN" name = "swag" value = "no"/>
-                    No
-                </br> 
-
-                <br>
-                    <label>
-                        Who are you interested in?
-                    </label>
-                </br>
-                <input type = "radio" id = "maleY" name = "interest" value = "male"/>
-                    Male
-                </br> 
-                <input type = "radio" id = "femaleY" name = "interest" value = "female"/>
-                    Female
-                </br>
-                <input type = "radio" id = "otherY" name = "interest" value = "other"/>
-                    Other
-                </br> 
-                <input type = "radio" id = "noneY" name = "interest" value = "none"/>
-                    No one
-                </br>  
-
-
-        </center>
-        <br>
-            <center>
-                <form action="pageLoad.html">
-                    <input type="submit" value="Submit" onclick = "submitStuff()" />
-                </form>
-            </center>        
-        </br>
-
-        <script src = "node.js"></script>
-    </body>
+                <script src = "node.js"></script>
+            </body>
+    </div>
 
 
 </html>
