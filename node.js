@@ -341,7 +341,6 @@ function percentStuff()
 
 	document.getElementById("percentage").innerHTML = "Well... " + localStorage.getItem("keyName");
 	document.getElementById("moreText").innerHTML =  "Your chance of getting it is " + localStorage.getItem("keyPercent") + "%";
-	ducment.getElementById("")
 }
 
 function goBack()
